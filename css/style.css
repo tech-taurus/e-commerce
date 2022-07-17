@@ -61,6 +61,7 @@ header{
 .icon {
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 .nav-mob {
     display: flex;
@@ -70,6 +71,13 @@ header{
 .nav-center {
     margin-top: 10px;
     justify-content: center;
+}
+.clothes-cat {
+    height: 2rem;
+}
+.clothes-cat:hover {
+  border-bottom: solid 1px #000000;
+  
 }
 .logo {
     width: 120px;
@@ -153,6 +161,7 @@ header{
     width: 250px;
     height: 300px;
     display: flex;
+    
     flex-direction: row;
     justify-content: end;
     align-items: flex-end;
