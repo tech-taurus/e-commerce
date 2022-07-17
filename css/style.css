@@ -32,17 +32,16 @@ body {
 
 main {
     width: 100%;
-    min-height:0px;
+    min-height:1000px;
 }
 /* ++++++++++++++++++++++++++ Header start ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 header{
     width: 100%;
     height: 151px;
     display: flex;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
-    outline: #141529;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -130,37 +129,44 @@ header{
  /* ++++++++++++++++++++++++ Header End ++++++++++++++++++++++++++++++++++++ */
  /* ++++++++++++++++++++++++ banner ++++++++++++++++++++++++++++++++++++ */
  .banner {
-    /* margin-top: 5rem;
-    margin-bottom: 7rem; */
+    margin-top: 5rem;
+    
     width: 100%;
     height: 700px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    /* outline: dashed red; */
  }
 .set-sail {
     max-width: 1200px;
     min-width: 100px;
 }
+/* .promo {
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    background-color: red;
+} */
 
  /* ++++++++++++++++++++++++ banner End ++++++++++++++++++++++++++++++++++++ */
  /* ++++++++++++++++++++++++ shop section ++++++++++++++++++++++++++++++++++++ */
 .shop {
     width: 100%;
-    height: 500px;
+    height: 200px;
     display: flex;
     margin-top: 50px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    outline: red dashed;
    
     
 }
 
  .shop-card {
-    width: 250px;
-    height: 300px;
+    width: 50%;
+    height: 100%;
     display: flex;
     
     flex-direction: row;
@@ -168,33 +174,33 @@ header{
     align-items: flex-end;
     padding-right: 30px;
     padding-bottom: 5px ;
-    /* outline: dashed red; */
  }
 
  .p1 {
     background-image: url("../assets/pic1.jpg");
-    background-size: 210px;
+    background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
+    outline:  dashed red;
  }
  
  .p2 {
     background-image: url("../assets/pic2.jpg");
-    background-size: 210px;
+    background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
  }
  
  .p3 {
     background-image: url("../assets/pic3.jpg");
-    background-size: 210px;
+    background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
  }
  
  .p4 {
     background-image: url("../assets/pic4.jpg");
-    background-size: 210px;
+    background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
  }
@@ -204,17 +210,29 @@ header{
 
 
 
-
-
+ @media screen and (max-width: 1200px){
+    .banner {
+        height: 40%;
+    }
+    .set-sail {
+        width: 1000px;
+    }
+ }
  @media screen and (min-width: 1024px){
-    .menu-icon{
+    .menu{
         display:none;
+ 
     }
  }
  @media screen and (max-width: 1024px){
-    .menu-icon {
+
+    .menu{
         display: flex;
         height: fit-content;
+    }
+    .menu-icon {
+        width: 30px;
+        height: 30px;
     }
     .nav-left {
         display: none;
@@ -239,16 +257,22 @@ header{
     .nav-center {
         display: none;
     }
-    .banner {
-        height: 530px;
-    }
+   
     .icon {
         width: 24px;
         height: 24px;
     }
     header {
-        padding-left: 5px;
+        padding-left: 15px;
         padding-right: 5px;
+        height: 72px;
+        margin-bottom: 5rem;
+    }
+    .banner {
+        height: 50%;
+    }
+    .set-sail {
+        width: 95%;
     }
        
  }
