@@ -132,21 +132,18 @@ header{
     margin-top: 5rem;
     
     width: 100%;
-    min-height: 700px;
+    min-height: 530px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     outline: dashed blue;
  }
-
-
- /* ++++++++++++++++++++++++ banner End ++++++++++++++++++++++++++++++++++++ */
- /* ++++++++++++++++++++++++ shop section ++++++++++++++++++++++++++++++++++++ */
  .responsive-img {
     width: 80%;
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     outline: dashed red;
@@ -155,8 +152,61 @@ header{
     width: 60%;
     height: auto;
 }
+.banner-ad {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.banner-ad h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
 
- 
+ /* ++++++++++++++++++++++++ banner End ++++++++++++++++++++++++++++++++++++ */
+ /* ++++++++++++++++++++++++ shop section ++++++++++++++++++++++++++++++++++++ */
+.slider {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    /* outline: dashed red; */
+    margin-bottom: 3rem;
+    overflow-x: hidden;
+}
+.track {
+    width: 154%;
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    /* outline: dashed blue; */
+}
+.circle-product {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border-radius: 50%;
+}
+.title-category {
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    /* padding-bottom: .5rem; */
+    padding-top: .5rem;
+    /* align-items: center; */
+}
+.title-category h3 {
+    font-size: 1.5rem;
+}
 
 
 
@@ -199,6 +249,9 @@ header{
 
  }
  @media screen and (max-width: 1024px){
+    .title-category {
+        width: 100%;
+    }
 
     .menu{
         display: flex;
@@ -270,6 +323,9 @@ header{
 }
 
 @media screen and (max-width: 600px){
+    .banner {
+        height: 730px;
+    }
 
     .responsive-img {
         width: 95%;
@@ -286,7 +342,26 @@ header{
 }
 @media screen and (max-width: 500px){
     .banner {
-        height: 400px;
+        height: 652px;
+       
+    }
+
+    .responsive-img {
+        width: 97%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-fluid {
+        width: 100%;
+        height: auto;
+}
+
+}
+@media screen and (max-width: 400px){
+    .banner {
+        height: 530px;
        
     }
 
