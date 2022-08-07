@@ -12,7 +12,7 @@
     
     /* --secondary-color: #24243C;
     --accent-color: #343757; */
-    --prime-color: #FBFBFB;
+    --prime-color: whitesmoke;
 }
 a {
     cursor: pointer;
@@ -207,6 +207,105 @@ header{
 .title-category h3 {
     font-size: 1.5rem;
 }
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++Sign in begins++++++++++++++++++++++++++++++ */
+
+
+ .sign-up-form {
+    font-family: "HM Sans Regular", HMSansHebrew-Regular, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    min-width: 500px;
+    max-width: 500px;
+    margin: auto;
+    background-color: #faf9f8;
+    align-items: center;
+    padding-top: 15px;
+    padding: 64px 24px 32px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    outline: none;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+ }
+
+.header {
+    display: block;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    padding-top: 15px;
+}
+
+h4{
+    text-align: center;
+}
+
+  
+label[types="email"] {
+    font-size: 13px;
+    line-height: 20px;
+    display: block;
+    color: #222;
+    margin: 6px 0 7px;
+    text-transform: none;
+    clear: both;
+    cursor: default;
+    color: #d6001c;
+    content: "*";
+
+}
+
+.checkbox-label {
+    display: flex;
+    margin-bottom: 15px;
+    margin-left: 4px;
+    padding-top: 0px;
+    padding-left: 18px;
+    font-size: 13px;
+    line-height: 2.6em;
+    vertical-align: bottom;
+
+}
+input[type="checkbox"]{
+    margin: 0 0 0 5px;
+    padding-top: 15px;
+    margin-left: 4px;
+    margin-top: 15px;
+
+}
+
+form input{
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 14px 25px 14px 10px;
+    letter-spacing: normal;
+    border: none;
+    border-radius: 0;
+    color: #222;
+    border: 1px solid #d0d0d0;
+}
+.button {
+    background-color:#222;
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++sign in ends ++++++++++++++++++++++++++++++++++++++++++++/*
+
+
+
+
+
+
 
 
 
