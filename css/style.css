@@ -12,7 +12,7 @@
     
     /* --secondary-color: #24243C;
     --accent-color: #343757; */
-    --prime-color: #FBFBFB;
+    --prime-color: whitesmoke;
 }
 a {
     cursor: pointer;
@@ -132,21 +132,18 @@ header{
     margin-top: 5rem;
     
     width: 100%;
-    min-height: 700px;
+    min-height: 530px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     outline: dashed blue;
  }
-
-
- /* ++++++++++++++++++++++++ banner End ++++++++++++++++++++++++++++++++++++ */
- /* ++++++++++++++++++++++++ shop section ++++++++++++++++++++++++++++++++++++ */
  .responsive-img {
     width: 80%;
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     outline: dashed red;
@@ -155,8 +152,160 @@ header{
     width: 60%;
     height: auto;
 }
+.banner-ad {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.banner-ad h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
 
- 
+ /* ++++++++++++++++++++++++ banner End ++++++++++++++++++++++++++++++++++++ */
+ /* ++++++++++++++++++++++++ shop section ++++++++++++++++++++++++++++++++++++ */
+.slider {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    /* outline: dashed red; */
+    margin-bottom: 3rem;
+    overflow-x: hidden;
+}
+.track {
+    width: 154%;
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    /* outline: dashed blue; */
+}
+.circle-product {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border-radius: 50%;
+}
+.title-category {
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    /* padding-bottom: .5rem; */
+    padding-top: .5rem;
+    /* align-items: center; */
+}
+.title-category h3 {
+    font-size: 1.5rem;
+}
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++Sign in begins++++++++++++++++++++++++++++++ */
+
+
+ .sign-up-form {
+    font-family: "HM Sans Regular", HMSansHebrew-Regular, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    min-width: 500px;
+    max-width: 500px;
+    margin: auto;
+    background-color: #faf9f8;
+    align-items: center;
+    padding-top: 15px;
+    padding: 64px 24px 32px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    outline: none;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+ }
+
+.header {
+    display: block;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    padding-top: 15px;
+}
+
+h4{
+    text-align: center;
+}
+
+  
+label[types="email"] {
+    font-size: 13px;
+    line-height: 20px;
+    display: block;
+    color: #222;
+    margin: 6px 0 7px;
+    text-transform: none;
+    clear: both;
+    cursor: default;
+    color: #d6001c;
+    content: "*";
+
+}
+
+.checkbox-label {
+    display: flex;
+    margin-bottom: 15px;
+    margin-left: 4px;
+    padding-top: 0px;
+    padding-left: 18px;
+    font-size: 13px;
+    line-height: 2.6em;
+    vertical-align: bottom;
+
+}
+input[type="checkbox"]{
+    margin: 0 0 0 5px;
+    padding-top: 15px;
+    margin-left: 4px;
+    margin-top: 15px;
+
+}
+
+form input{
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 14px 25px 14px 10px;
+    letter-spacing: normal;
+    border: none;
+    border-radius: 0;
+    color: #222;
+    border: 1px solid #d0d0d0;
+}
+.button {
+    background-color:#222;
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++sign in ends ++++++++++++++++++++++++++++++++++++++++++++/*
+
+
+
+
+
+
 
 
 
@@ -199,6 +348,9 @@ header{
 
  }
  @media screen and (max-width: 1024px){
+    .title-category {
+        width: 100%;
+    }
 
     .menu{
         display: flex;
@@ -270,6 +422,9 @@ header{
 }
 
 @media screen and (max-width: 600px){
+    .banner {
+        height: 730px;
+    }
 
     .responsive-img {
         width: 95%;
@@ -286,7 +441,26 @@ header{
 }
 @media screen and (max-width: 500px){
     .banner {
-        height: 400px;
+        height: 652px;
+       
+    }
+
+    .responsive-img {
+        width: 97%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-fluid {
+        width: 100%;
+        height: auto;
+}
+
+}
+@media screen and (max-width: 400px){
+    .banner {
+        height: 530px;
        
     }
 
